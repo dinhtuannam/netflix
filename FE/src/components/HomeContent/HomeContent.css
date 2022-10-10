@@ -1,0 +1,40 @@
+.home-content-container {
+    background: #181818;
+    color: #fff;
+    padding: var(--margin-left-right);
+    padding-bottom: 50px;
+}
+
+.content-paragraph {
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.content-intro {
+    padding-top: 50px;
+    font-size: 3rem;
+    word-wrap: break-word;
+}
+
+.content-des {
+    padding-top: 10px;
+    font-size: 19px;
+}
+
+.content-slider {
+    margin-bottom: 60px;
+}
+
+.content-slider-name {
+    margin: 15px 34px 15px 0px;
+    display: inline-block;
+}
+
+.content-slider-explore {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.content-slider-name {
+    font-size: 22px;
+}
