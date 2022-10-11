@@ -5,18 +5,66 @@
 .navigation-spacing {
     width: 100%;
     height: 80px;
+    background-color: #000;
+}
+
+.watch-server{
+    padding-left: 10px;
 }
 
 .watch-content {
     display: flex;
     justify-content: space-between;
     padding: var(--margin-left-right);
-    margin: 40px 0px;
+    margin: 26px 0px;
 }
 
 .frame-container {
     width: 64%;
     margin-right: 16px;
+}
+
+.watch-movie-info{
+    color: #fff;
+}
+.watch-control{
+    color: #fff;
+    background-color: rgba(255,255,255,.03);
+    line-height: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.server-1,.server-2{
+    margin-left: 14px;
+    color: #fff;
+    background-color: #d9534f;
+    padding: 4px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.watch-download-btn{
+    background-color: #444;
+    display: inline;
+    padding: 6px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.watch-download-btn .download-icon{
+    margin-right:6px;
+    margin-bottom: -3px;
+    font-size: 16px;
+}
+
+
+.watch-control p{
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 16px;
 }
 
 .watch-frame {
@@ -26,4 +74,6 @@
 
 .watch-similiar-film {
     color: #fff;
+    background-color: rgba(255,255,255,.03);
+    width: 34%;
 }

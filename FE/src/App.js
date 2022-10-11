@@ -5,7 +5,7 @@ import { PublicRoutes } from './routes/PublicRoutes';
 function App() {
     return (
         <Router>
-            <div className="App">dsa
+            <div className="App">
                 <Routes>
                     {PublicRoutes.map((value, index) => {
                         const Page = value.component;
