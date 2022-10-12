@@ -6,6 +6,7 @@ import {
     getDetailMovie,
     getCasterMovie,
     getTrailer,
+    getSimiliar
 } from '../utils/ApiRequest';
 
 export const getNowPlayingService = async (page) => {
@@ -41,5 +42,11 @@ export const getCasterMovieService = async (id) => {
 export const getTrailerService = async (id) => {
     const path = `${id}/videos?api_key=${apiKey}&language=en-US`;
     const response = await getTrailer(path);
+    return response;
+};
+
+export const getSimiliarService = async (id) => {
+    const path = `${id}/similar?api_key=${apiKey}&language=en-US`;
+    const response = await getSimiliar(path);
     return response;
 };

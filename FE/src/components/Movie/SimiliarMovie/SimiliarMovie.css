@@ -1,3 +1,60 @@
-.list-similiar-film{
+.list-similar-film{
     list-style: none;
+}
+.similar-title{
+    margin-bottom: 10px;
+    padding: 10px;
+    letter-spacing: 1px;
+    color: #D9534F;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.list-similiar-item{
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.similar-img-container{
+    margin-right: 14px;
+}
+
+.similar-img{
+    max-width: 114px;
+    border-radius: 5px;
+}
+.similar-title-movie{
+    font-size: 22px;
+}
+.similar-date-movie{
+    opacity: .7;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.similar-vote{
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 4px;
+}
+.similar-star{
+    margin-bottom: -2px;
+    color: #fff;
+   
+}
+.similar-playlist-btn{
+    padding: 6px 8px;
+    border-radius: 5px;
+    background-color: #34495e;
+    color: #fff;
+    border: 1px solid #34495e;;
+    margin-top: 28px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: .8px;
+    opacity: .9;
+}
+.similar-playlist-btn:hover{
+    opacity: 1;
 }

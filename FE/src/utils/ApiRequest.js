@@ -35,3 +35,8 @@ export const getTrailer = async (path, option = {}) => {
     const response = await tmdbRequest.get(path, option);
     return response.data.results[0];
 };
+
+export const getSimiliar = async (path, option = {}) => {
+    const response = await tmdbRequest.get(path, option);
+    return response.data.results.slice(0,4);
+};

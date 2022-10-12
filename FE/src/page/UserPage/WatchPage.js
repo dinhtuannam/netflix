@@ -51,12 +51,14 @@ function WatchPage() {
                         allowFullScreen
                     ></iframe>
                     <div className='watch-movie-info'>
-                        <h1>{movie.title}</h1>
-                        <p>{movie.overview}</p>
+                        <div className='info-container'>
+                            <h1 className='watch-movie-title'>{movie.title}</h1>
+                            <p className='watch-movie-overview'>{movie.overview}</p>
+                        </div>
                     </div>
                 </div>
                 <div className="watch-similiar-film">
-                    <SimiliarMovie/>
+                    <SimiliarMovie data={id}/>
                 </div>
             </div>
         </div>
