@@ -1,5 +1,5 @@
 import NetflixLogo from '../../assets/image/netflix-img.png';
-import { MdSearch } from 'react-icons/md';
+//import { MdSearch } from 'react-icons/md';
 import './Navbar.css';
 import { useScrollY } from '../../hooks/useScrollY';
 import { Link } from 'react-router-dom';
@@ -17,9 +17,13 @@ function Navbar() {
                         <img className="navbarImg" src={NetflixLogo} alt="Netflix logo" />
                     </Link>
                 </div>
-                <div className="navSearch">
+                {/* <div className="navSearch">
                     <MdSearch className="iconSearch" />
                     <input className="inputSearch" type="text" />
+                </div> */}
+                <div className='navbar-controller'>
+                    <a href="http://localhost:3000/register" className='register-btn'>Register</a>
+                    <a href="http://localhost:3000/login" className='login-btn'>Login</a>                
                 </div>
             </div>
         </div>
