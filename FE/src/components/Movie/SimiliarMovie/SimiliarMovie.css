@@ -20,7 +20,9 @@
 .similar-img-container{
     margin-right: 14px;
 }
-
+.similar-img-container:hover{
+    opacity: .86;
+}
 .similar-img{
     max-width: 114px;
     border-radius: 5px;

@@ -2,7 +2,7 @@ import { useParams} from 'react-router-dom';
 import { useState,useEffect, Fragment } from 'react';
 import { getDetailMovieService } from '../../apiService/MovieService';
 import {FaDatabase} from 'react-icons/fa'
-import {AiOutlineCloudDownload} from 'react-icons/ai';
+import {AiOutlineCloudDownload,AiFillStar} from 'react-icons/ai';
 import {BsExclamationCircle} from 'react-icons/bs';
 import '../../assets/css/WatchPage.css';
 import SimiliarMovie from '../../components/Movie/SimiliarMovie/SimiliarMovie';
@@ -17,7 +17,7 @@ function WatchPage() {
         };
         getMovie();
     }, [id]);
-
+    console.log(movie)
     const RenderContent = () =>{
         return(
             <div className="watch-page-container">
@@ -53,6 +53,11 @@ function WatchPage() {
                     <div className='watch-movie-info'>
                         <div className='info-container'>
                             <h1 className='watch-movie-title'>{movie.title}</h1>
+                            <div className='watch-rate-container'>
+                                <p className='watch-movie-rate'>Vote rate : {movie.vote_average.toFixed(1)}</p>
+                                <AiFillStar className='watch-movie-icon'/>
+                            </div>
+                            <p className='watch-overview-title'>Overview</p>
                             <p className='watch-movie-overview'>{movie.overview}</p>
                         </div>
                     </div>

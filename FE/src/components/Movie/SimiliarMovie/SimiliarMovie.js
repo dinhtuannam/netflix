@@ -26,14 +26,14 @@ function SimiliarMovie({data}) {
                 item.vote_average = Math.round(item.vote_average * 100) / 100
                 return (
                     <li className='list-similiar-item' key={item.id}>
-                        <div className='similar-img-container'>
+                        <a href={`http://localhost:3000/movie/id=${item.id}`} className='similar-img-container'>
                             <img src={apiImgPath + item.poster_path} alt="img poster" className='similar-img'/>
-                        </div>
+                        </a>
                         <div className='similar-info-container'>
                             <h1 className='similar-title-movie'>{item.title}</h1>
                             <h3 className='similar-date-movie'>{item.release_date}</h3>
                             <div>
-                                <p className='similar-vote'>{item.vote_average}</p>
+                                <p className='similar-vote'>{item.vote_average.toFixed(1)}</p>
                                 <AiFillStar className='similar-star'/>
                             </div>
                             <button className='similar-playlist-btn'>
